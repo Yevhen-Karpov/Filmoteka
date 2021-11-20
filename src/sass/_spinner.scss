@@ -1,0 +1,56 @@
+.loading__spinner {
+  position: absolute;
+  content: '';
+  left: 47%;
+  top: 35%;
+  margin: auto;
+  z-index: 999;
+  width: 6rem;
+  height: 6rem;
+  display: inline;
+  border: 7px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  margin-bottom: 10rem;
+  animation: 1s spin infinite ease-in-out;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading__dots > div {
+  position: relative;
+  content: '';
+  left: 45%;
+  top: 25%;
+  margin: auto;
+  z-index: 999;
+  width: 25px;
+  height: 25px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: inline-block;
+  animation: 3s bounce infinite ease-in-out both;
+}
+
+.loading__dots .bounce {
+  animation-delay: 2s;
+}
+
+.loading__dots .bounce2 {
+  animation-delay: 1s;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

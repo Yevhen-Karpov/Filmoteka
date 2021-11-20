@@ -1,0 +1,43 @@
+<header class="header__background-home" id="header">
+  <div class="container header__container">
+    <nav class="header__nav">
+      <a href="./index.html" class="header__logo">
+        <svg class="logo animate__animated animate__shakeY animate__repeat-1 animate__faster">
+          <use class="animate__delay-3s" href="./images/sprite.svg#film"></use></svg
+        ><span class="header__logo-span"> Filmoteka</span>
+      </a>
+      <ul class="header__nav-list">
+        <li>
+          <a href="./index.html" class="header__nav-home-link" id="home-link">Home</a>
+        </li>
+        <li>
+          <a href="#" class="header__nav-library-link" id="library-link">my library</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__form">
+      <form class="header__search-form js-search-form" id="search-form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Movie search"
+          class="header__search-form-input"
+          id="search-form-input"
+        />
+        <button type="submit" class="header__form-btn"></button>
+      </form>
+      <div class="header__search-error is-hidden">
+        <p class="header__search-error-text">
+          Search result not successful. Enter the correct movie name and try again.
+        </p>
+      </div>
+    </div>
+
+    <div class="header__button disabled">
+      <button type="submit" class="header__btn" id="btn-watched">Watched</button>
+      <button type="submit" class="header__btn" id="btn-queue">queue</button>
+    </div>
+  </div>
+</header>
